@@ -1,0 +1,59 @@
+.paymentSuccessful{
+    background-image: url('../img/photo-1505935428862-770b6f24f629.jpg');
+    background-repeat:no-repeat;
+    background-position: center; 
+    background-size:cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 60px;
+    @include  small{
+        margin-bottom: 65px;
+    }
+    .check{
+        margin: 130px auto 232px;
+        @include  small{
+            margin: 210px auto 200px;
+        }
+
+        ul{
+            display: flex;
+            padding-bottom: 32px;
+            img{
+                width:20px
+            }
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .line{
+            // display: block;
+            height: 10px;
+            width: 66px;
+            border-bottom: 2px solid #3F5D45;
+          }
+    }
+    .continue{
+        position: absolute;
+        bottom: 116px;
+        @include  small{
+            bottom: -65px;
+        }
+        button{
+            width: 300px;
+            height: 65px;
+            background-color: #FFE180;
+            border: none;
+            font-size: 24px;
+            font-weight: 600;
+            color: #3F5D45;
+            @include  small{
+                width: 375px;
+            }
+        }
+    }
+
+}

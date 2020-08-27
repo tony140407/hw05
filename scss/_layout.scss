@@ -1,0 +1,243 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+    * {
+        font-family: 'Noto Sans TC';
+    }
+    .wrap {
+        width: 940px;
+        margin: 30px auto 0 auto;
+        @include  medium{
+            width: 90%;
+        }
+        @include  small{
+            width: 375px;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        position: relative;
+        @include  small{
+            margin: 33px 0;
+        }
+        .logo {
+            width: 219.5px;
+        }
+        .links {
+            width: 33%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include  small{
+                width: auto;
+            }
+        }
+        .other_link {
+            max-height: 0px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            @include  small{
+                position: absolute;
+                left: 0;
+                top: 100%;
+                width: 100%;
+                
+                transition: all 0.8s;
+                overflow: hidden;
+                background: white;
+                flex-direction: column;
+                li {
+                    padding: 10px 0;
+                    text-align: center;
+                    width: 100%;
+                    padding-left: 0;
+                    &:hover {
+                        background-color: #EAF0ED;
+                      }
+                  }
+            }
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                padding: 10px 15px;
+                color: #3F5D45;
+                &:hover{
+                    background-color: #EAF0ED;
+                }
+            }
+            
+        }
+        .active {
+            max-height: 200px;
+          }
+        .dehaze {
+            display: none;
+            @include  small{
+                display: block;
+            }
+            button {
+                background-color: #fff;
+                border: none;
+                &:hover {
+                    background-color: #EAF0ED;
+                    color: #3F5D45;
+                }
+            }
+        }
+    }
+// ------------------------------------------
+.footer{
+    .inner {
+        max-width: 800px;
+        margin: 0 auto;
+        @include  medium{
+            max-width: 80%;
+        }
+        @include  small{
+            max-width: 315px;
+        }
+        }
+    .footer_top {
+        background-color: #3F5D45;
+        padding: 29px 0 ;
+    }
+    .footer_form{
+        @include  small{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .form_content {
+        display: flex;
+        justify-content: space-between;
+        // width: 940px;
+        margin: 0 auto 0 auto;
+        @include  small{
+            display: block;
+        }
+    }
+    .form_label {
+        display: flex;
+        &>img {
+            width: 40px;
+            margin-right: 20px;
+            @include  small{
+                margin-left: 20px;
+            }
+        }
+        &>span {
+            display: block;
+            line-height: 60px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #EAF0ED;
+        }
+    }
+    .form_input {
+        display: flex;
+        position: relative;
+        input {
+            display: block;
+             padding-left: 65px; 
+            font-weight: bold;
+            color: #3F5D45;
+            outline: none;
+            border: none;
+            @include  small{
+                // font-weight: bold;
+                // color: #3F5D45;
+                // outline: none;
+                // border: none;
+                // width: 250px;
+            }
+        }
+        button {
+            cursor: pointer;
+            background-color: #FFE180;
+            padding: 16px;
+            outline: none;
+            border: none;
+            @include  small{
+
+            }
+        }
+    }
+    .mail_icon {
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        bottom: 16px;
+    }
+    .footer_middle {
+        background-color: #EAF0ED;
+        padding: 40px 0;
+        .inner{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+    }
+
+    .contact {
+        img {
+            margin-bottom: 165px;
+        }
+        li {
+            font-size: 16px;
+            line-height: 24px;
+            color: #3F5D45;
+        }
+
+    }
+    .slogan {
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 5px;
+        // font-weight: bolder;
+        color: #3F5D45;
+        font-weight: 900;
+        @include  small{
+            display: none;
+        }
+    }
+
+    .footer_bottom {
+        padding: 40px 0;
+        background-color: #EAF0ED;
+        
+        .inner{
+            display: flex;
+            justify-content: space-between;
+            @include  small{
+                display: block;
+            }
+        }
+        ul {
+            display: flex;
+        }
+        li+li {
+            margin-left: 8px;
+        }
+        img {
+            height: 36px;
+        }
+        p{
+            margin: auto 0;
+        }
+        .footer_link{
+            @include  small{
+                margin-bottom: 23px;
+            }
+        }
+    }
+}
+    
+
+
+
